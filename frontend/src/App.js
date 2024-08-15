@@ -54,7 +54,7 @@ function App() {
       <div>{back2}</div>
       <div className="width-full flex align-center flex-column">
         <form onSubmit={handleSubmit}
-        style={{width: '640px', margin: '36px', padding: '24px', borderRadius: '10px', boxShadow: '0 0 5px rgba(0,0,0,0.5)'}}>
+        style={{width: '90%', maxWidth: '640px', margin: '36px', padding: '24px', borderRadius: '10px', boxShadow: '0 0 5px rgba(0,0,0,0.5)'}}>
           <div className='inter' style={{textAlign: 'center', fontSize: '36px', marginBottom: '24px'}}>
             Add Alien
           </div>
@@ -80,7 +80,7 @@ function App() {
             </div>
           }
         </form>
-        <div style={{width: '640px', padding: '24px', borderRadius: '10px', boxShadow: '0 0 5px rgba(0,0,0,0.5)'}}>
+        <div style={{width: '90%', maxWidth: '640px', padding: '24px', borderRadius: '10px', boxShadow: '0 0 5px rgba(0,0,0,0.5)'}}>
           {aliens && aliens.map((alien, i)=>(
             <div key={i} style={{border: '1px solid black', padding: '16px', borderRadius: '5px', marginBottom: '16px'}}>
               <div className="inter">{alien.name}</div>
